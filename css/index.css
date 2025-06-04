@@ -46,6 +46,12 @@ body {
 .btn-danger {
   color: white;
   background-color: #a6444c;
+  transition: background-color 0.4s ease;
+}
+
+.btn-danger:hover {
+  color: white;
+  background-color: #eb4b58;
 }
 
 .btn-ligth {
@@ -56,10 +62,16 @@ body {
 .btn-dark {
   color: black;
   background-color: #f4a261;
+  transition: background-color 0.3s ease;
+}
+
+.btn-dark:hover {
+  color: black;
+  background-color: #fcd3a5;
 }
 
 .bg-header {
-  background-image: url("/images/bg-bar.png");
+  background-image: url("/images/bg-bar.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -173,7 +185,7 @@ body {
 }
 
 .about-col-img {
-  background-image: url("/images/about.png");
+  background-image: url("/images/about.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -229,4 +241,56 @@ body {
   padding-top: 1em;
   padding-bottom: 1em;
   text-align: center;
+}
+
+
+#btnShowRecipe {
+  background-color: #0f2620;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btnShowRecipe:hover {
+  background-color: #194237;
+}
+
+.optionRecipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin: 0.5em 0;
+}
+
+@media (min-width: 768px) {
+  .optionRecipe {
+    flex-direction: row;
+  }
+  #recipeSelect {
+    width: 20rem;
+  }
+}
+
+#recipeSelect {
+  background-color: #05060f0a;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  width: 14em;
+}
+
+#recipeSelect:hover {
+  outline: none;
+  border-color: #d4d6e5;
+}
+
+#recipeSelect:hover {
+  color: #0c101bc2;
 }
